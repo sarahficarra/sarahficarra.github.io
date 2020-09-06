@@ -5,46 +5,32 @@
 
 #Theme Settings
 remote_theme            : "mmistakes/minimal-mistakes@4.20.1"
-minimal_mistakes_skin   : "dirt" # "default", "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 #Site Settings
 locale                  : "en-US"
 title                   : "Better Today Kitchen"
 title_separator         : "-"
-subtitle                : "Tips and tricks from my journey to become a better home cook"
-name                    : "Better Today Kitchen"
-description             : "A regular home cook trying to cook better today than yesterday!"
-url                     : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+subtitle                : "A journey to become a better home cook"
+name                    : "Sarah Ficarra" # assigns a site author, can be overwritten for specific posts
+description             : "A regular home cook trying to cook better today than yesterday!" # used predominantly in meta descriptions for improving SEO
+url                     : "https://sarahficarra.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                 : # the subpath of your site, e.g. "/blog"
-repository              : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+repository              : "sarahficarra/sarahficarra.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                  : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                    : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
-masthead_title          : "Better Today Kitchen" # overrides the website title displayed in the masthead, use " " for no title
+masthead_title          : # overrides the website title displayed in the masthead, use " " for no title
 # breadcrumbs           : false # true, false (default)
 words_per_minute        : 200
 comments:
-  provider              : # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "custom"
+  provider              : "disqus" # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "custom"
   disqus:
-    shortname           : # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
-  discourse:
-    server              : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
-  facebook:
-    # https://developers.facebook.com/docs/plugins/comments
-    appid               :
-    num_posts           : # 5 (default)
-    colorscheme         : # "light" (default), "dark"
-  utterances:
-    theme               : # "github-light" (default), "github-dark"
-    issue_term          : # "pathname" (default)
-  staticman:
-    branch              : # "master"
-    endpoint            : # "https://{your Staticman v3 API}/v3/entry/github/"
+    shortname           : "better-today-kitchen" # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
 reCaptcha:
   siteKey               :
   secret                :
 atom_feed:
   path                  : # blank (default) uses feed.xml
-search                  : # true, false (default)
+search                  : true # true, false (default)
 search_full_content     : # true, false (default)
 search_provider         : # lunr (default), algolia, google
 algolia:
@@ -177,12 +163,7 @@ plugins:
   - jekyll-gist
   - jekyll-feed
   - jekyll-include-cache
-
-# Use the following plug-ins
-# gems:
-#  - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
-#  - jekyll-feed # Create an Atom feed using the official Jekyll feed gem
-#  - jekyll-include-cache
+  - jekyll-archives
 
 # Archives
 #  Type
@@ -195,22 +176,22 @@ plugins:
 #  - <base_path>/categories/my-awesome-category/index.html ~> path: /categories/
 #  - <base_path>/my-awesome-category/index.html ~> path: /
 category_archive:
-  type: liquid
+  type: jekyll-archives
   path: /categories/
 tag_archive:
-  type: liquid
+  type: jekyll-archives
   path: /tags/
 # https://github.com/jekyll/jekyll-archives
-# jekyll-archives:
-#   enabled:
-#     - categories
-#     - tags
-#   layouts:
-#     category: archive-taxonomy
-#     tag: archive-taxonomy
-#   permalinks:
-#     category: /categories/:name/
-#     tag: /tags/:name/
+jekyll-archives:
+  enabled:
+    - categories
+    - tags
+  layouts:
+    category: archive-taxonomy
+    tag: archive-taxonomy
+  permalinks:
+    category: /categories/:name/
+    tag: /tags/:name/
 
 
 # HTML Compression
@@ -225,7 +206,7 @@ compress_html:
 defaults:
   # _posts
   - scope:
-      path: ""
+      path: "_posts"
       type: posts
     values:
       layout: single
