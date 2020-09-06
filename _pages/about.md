@@ -1,7 +1,7 @@
 ---
 permalink: /about/
 title: "About"
-excerpt: "Minimal Mistakes is a flexible two-column Jekyll theme."
+excerpt: "Hi, I'm Sarah and *Better Today* chronicles my journey to become a better home cook."
 ---
 
 ## Hi, I'm Sarah 
