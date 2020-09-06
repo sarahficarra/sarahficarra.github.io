@@ -5,7 +5,7 @@
 
 #Theme Settings
 remote_theme            : "mmistakes/minimal-mistakes@4.20.1"
-
+  
 #Site Settings
 locale                  : "en-US"
 title                   : "Better Today Kitchen"
@@ -214,8 +214,6 @@ defaults:
       read_time: true
       share: true
       related: true
-    header:
-      image: /images/header-image2.png
   # _pages
   - scope:
       path: "_pages"
