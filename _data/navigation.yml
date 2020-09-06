@@ -1,10 +1,8 @@
 main:
   - title: "About"
-    url: /docs/quick-start-guide/
+    url: /about/
   - title: "Posts"
     url: /year-archive/
-  - title: "About"
-    url: /categories/
   - title: "Tags"
     url: /tags/
   - title: "Pages"
