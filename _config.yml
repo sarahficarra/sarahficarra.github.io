@@ -10,7 +10,7 @@ remote_theme            : "mmistakes/minimal-mistakes@4.20.1"
 locale                  : "en-US"
 title                   : "Better Today Kitchen"
 title_separator         : "-"
-subtitle                : # site tagline that appears below site title in masthead
+subtitle                : "Tips and tricks from my journey to become a better home cook"
 name                    : "Better Today Kitchen"
 description             : "A regular home cook trying to cook better today than yesterday!"
 url                     : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
@@ -88,13 +88,13 @@ analytics:
 author:
   name             : "Sarah Ficarra"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
-  location         : "California, US"
+  bio              : "I enjoy cooking and baking, but I know I'm just average. I want to be a better home cook and this blog chronicles that experience. Join me to experience my successes, my failures, and my learnings on my journey."
+  location         : "United States"
   email            :
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      # url: "mailto:your.name@email.com"
+      url: "bettertodaykitchen@sarah.ficarra.me"
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
@@ -106,7 +106,7 @@ author:
       # url: "https://facebook.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url: "https://github.com/"
+      url: "https://github.com/sarahficarra
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"
